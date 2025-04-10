@@ -14,7 +14,7 @@ def analyze_financial_data(text):
 Your job is to analyze this data and provide suggestions to increase their savings or investment rate.
 Include specific recommendations such as cutting back on subscriptions or reducing dining expenses."""
 
-    response = client.chat.completions.create(model="gpt-3.5-turbo",
+    response = client.chat.completions.create(model="gpt-4",
     messages=[
         {"role": "system", "content": "You are a smart finance assistant."},
         {"role": "user", "content": prompt}
